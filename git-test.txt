@@ -1,0 +1,3 @@
+fast-forward
+3-way
+pull-request
