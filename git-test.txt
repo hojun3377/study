@@ -2,3 +2,5 @@ fast-forward
 3-way
 pull-request
 conflict2
+branch-protection-rule
+    require a pull request before merging
