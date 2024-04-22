@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Test</title>
+    <style>
+      h1 {
+        color: rgb(173, 6, 6);
+        text-align: center;
+      }
+
+      .login_form_inputs {
+        font-size: 25px;
+      }
+
+      #btn_alert {
+        font-size: 15px;
+        width: 100px;
+        height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Test</h1>
+    <form>
+      ID : <input class="login_form_inputs" type="text" />
+      <br />
+      PW : <input class="login_form_inputs" type="password" />
+      <br />
+      <input
+        id="btn_alert"
+        type="button"
+        value="ID Alert"
+        onclick="myFunction();" />
+    </form>
+    <script>
+      function myFunction() {
+        const [elementID, _] =
+          document.getElementsByClassName('login_form_inputs');
+        const id = elementID.value;
+        const text = id ? id : '아이디를 입력하세요!';
+
+        alert(text);
+      }
+    </script>
+  </body>
+</html>
