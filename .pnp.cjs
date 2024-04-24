@@ -10,14 +10,19 @@ const RAW_RUNTIME_STATE =
   ],\
   "dependencyTreeRoots": [\
     {\
-      "name": "root-workspace-0b6124",\
+      "name": "study",\
       "reference": "workspace:."\
+    },\
+    {\
+      "name": "test",\
+      "reference": "workspace:packages/test"\
     }\
   ],\
   "enableTopLevelFallback": true,\
   "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
   "fallbackExclusionList": [\
-    ["root-workspace-0b6124", ["workspace:."]]\
+    ["study", ["workspace:."]],\
+    ["test", ["workspace:packages/test"]]\
   ],\
   "fallbackPool": [\
   ],\
@@ -30,11 +35,20 @@ const RAW_RUNTIME_STATE =
         "linkType": "SOFT"\
       }]\
     ]],\
-    ["root-workspace-0b6124", [\
+    ["study", [\
       ["workspace:.", {\
         "packageLocation": "./",\
         "packageDependencies": [\
-          ["root-workspace-0b6124", "workspace:."]\
+          ["study", "workspace:."]\
+        ],\
+        "linkType": "SOFT"\
+      }]\
+    ]],\
+    ["test", [\
+      ["workspace:packages/test", {\
+        "packageLocation": "./packages/test/",\
+        "packageDependencies": [\
+          ["test", "workspace:packages/test"]\
         ],\
         "linkType": "SOFT"\
       }]\

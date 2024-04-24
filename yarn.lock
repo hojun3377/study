@@ -5,8 +5,14 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"root-workspace-0b6124@workspace:.":
+"study@workspace:.":
   version: 0.0.0-use.local
-  resolution: "root-workspace-0b6124@workspace:."
+  resolution: "study@workspace:."
+  languageName: unknown
+  linkType: soft
+
+"test@workspace:packages/test":
+  version: 0.0.0-use.local
+  resolution: "test@workspace:packages/test"
   languageName: unknown
   linkType: soft
