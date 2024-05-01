@@ -9,7 +9,7 @@
     "packages/*"
   ],
   "scripts": {
-    "test": "yarn workspace test"
+    "client": "yarn workspace client-study"
   },
   "packageManager": "yarn@4.1.1"
 }
