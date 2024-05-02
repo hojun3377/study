@@ -1,3 +1,17 @@
 {
+  "name": "study",
+  "description": "Web Develop Study Repository",
+  "repository": {
+    "url": "https://github.com/hojun3377/study",
+    "type": "git"
+  },
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "client": "yarn workspace client-study",
+    "server": "yarn workspace server-study"
+  },
   "packageManager": "yarn@4.1.1"
 }

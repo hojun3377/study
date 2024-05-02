@@ -1,0 +1,5 @@
+{
+  "name": "client-study",
+  "private": true,
+  "packageManager": "yarn@4.1.1"
+}
