@@ -14,7 +14,7 @@ const RAW_RUNTIME_STATE =
       "reference": "workspace:."\
     },\
     {\
-      "name": "test",\
+      "name": "client-study",\
       "reference": "workspace:packages/client-study"\
     },\
     {\
@@ -25,9 +25,9 @@ const RAW_RUNTIME_STATE =
   "enableTopLevelFallback": true,\
   "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
   "fallbackExclusionList": [\
+    ["client-study", ["workspace:packages/client-study"]],\
     ["server-study", ["workspace:packages/server-study"]],\
-    ["study", ["workspace:."]],\
-    ["test", ["workspace:packages/client-study"]]\
+    ["study", ["workspace:."]]\
   ],\
   "fallbackPool": [\
   ],\
@@ -102,6 +102,15 @@ const RAW_RUNTIME_STATE =
           ["set-function-length", "npm:1.2.2"]\
         ],\
         "linkType": "HARD"\
+      }]\
+    ]],\
+    ["client-study", [\
+      ["workspace:packages/client-study", {\
+        "packageLocation": "./packages/client-study/",\
+        "packageDependencies": [\
+          ["client-study", "workspace:packages/client-study"]\
+        ],\
+        "linkType": "SOFT"\
       }]\
     ]],\
     ["content-disposition", [\
@@ -710,15 +719,6 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["study", "workspace:."]\
-        ],\
-        "linkType": "SOFT"\
-      }]\
-    ]],\
-    ["test", [\
-      ["workspace:packages/client-study", {\
-        "packageLocation": "./packages/client-study/",\
-        "packageDependencies": [\
-          ["test", "workspace:packages/client-study"]\
         ],\
         "linkType": "SOFT"\
       }]\
