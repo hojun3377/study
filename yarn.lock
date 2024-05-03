@@ -850,6 +850,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "study@workspace:."
   dependencies:
+    express: "npm:^4.19.2"
     tree-node-cli: "npm:^1.6.0"
   languageName: unknown
   linkType: soft

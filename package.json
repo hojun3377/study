@@ -11,12 +11,16 @@
     "packages/*"
   ],
   "scripts": {
-    "client": "yarn workspace client-study",
-    "server": "yarn workspace server-study",
+    "client": "workspace client-study",
+    "server": "workspace server-study",
+    "test": "node test/server/index.js",
     "tree": "tree -a --dirs-first -L 2 -I '.git|README.md|unplugged'"
   },
   "packageManager": "yarn@4.2.1",
   "devDependencies": {
     "tree-node-cli": "^1.6.0"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
   }
 }

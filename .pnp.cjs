@@ -37,6 +37,7 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
+          ["express", "npm:4.19.2"],\
           ["tree-node-cli", "npm:1.6.0"]\
         ],\
         "linkType": "SOFT"\
@@ -1038,6 +1039,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["study", "workspace:."],\
+          ["express", "npm:4.19.2"],\
           ["tree-node-cli", "npm:1.6.0"]\
         ],\
         "linkType": "SOFT"\
