@@ -62,6 +62,12 @@ __metadata:
   languageName: node
   linkType: hard
 
+"client-study@workspace:packages/client-study":
+  version: 0.0.0-use.local
+  resolution: "client-study@workspace:packages/client-study"
+  languageName: unknown
+  linkType: soft
+
 "content-disposition@npm:0.5.4":
   version: 0.5.4
   resolution: "content-disposition@npm:0.5.4"
@@ -568,12 +574,6 @@ __metadata:
 "study@workspace:.":
   version: 0.0.0-use.local
   resolution: "study@workspace:."
-  languageName: unknown
-  linkType: soft
-
-"test@workspace:packages/client-study":
-  version: 0.0.0-use.local
-  resolution: "test@workspace:packages/client-study"
   languageName: unknown
   linkType: soft
 
