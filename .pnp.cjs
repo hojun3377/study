@@ -15,20 +15,20 @@ const RAW_RUNTIME_STATE =
       "reference": "workspace:."\
     },\
     {\
-      "name": "client-study",\
-      "reference": "workspace:packages/client-study"\
-    },\
-    {\
       "name": "server-study",\
       "reference": "workspace:packages/server-study"\
+    },\
+    {\
+      "name": "todo-client",\
+      "reference": "workspace:packages/todo-client"\
     }\
   ],\
   "enableTopLevelFallback": true,\
   "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
   "fallbackExclusionList": [\
-    ["client-study", ["workspace:packages/client-study"]],\
     ["server-study", ["workspace:packages/server-study"]],\
-    ["study", ["workspace:."]]\
+    ["study", ["workspace:."]],\
+    ["todo-client", ["workspace:packages/todo-client"]]\
   ],\
   "fallbackPool": [\
   ],\
@@ -182,15 +182,6 @@ const RAW_RUNTIME_STATE =
           ["traverse", "npm:0.3.9"]\
         ],\
         "linkType": "HARD"\
-      }]\
-    ]],\
-    ["client-study", [\
-      ["workspace:packages/client-study", {\
-        "packageLocation": "./packages/client-study/",\
-        "packageDependencies": [\
-          ["client-study", "workspace:packages/client-study"]\
-        ],\
-        "linkType": "SOFT"\
       }]\
     ]],\
     ["commander", [\
@@ -1041,6 +1032,15 @@ const RAW_RUNTIME_STATE =
           ["study", "workspace:."],\
           ["express", "npm:4.19.2"],\
           ["tree-node-cli", "npm:1.6.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }]\
+    ]],\
+    ["todo-client", [\
+      ["workspace:packages/todo-client", {\
+        "packageLocation": "./packages/todo-client/",\
+        "packageDependencies": [\
+          ["todo-client", "workspace:packages/todo-client"]\
         ],\
         "linkType": "SOFT"\
       }]\

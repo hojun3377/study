@@ -11,8 +11,8 @@
     "packages/*"
   ],
   "scripts": {
-    "client": "workspace client-study",
-    "server": "workspace server-study",
+    "client": "yarn workspace todo-client",
+    "server": "yarn workspace server-study",
     "test": "node test/server/index.js",
     "tree": "tree -a --dirs-first -L 2 -I '.git|README.md|unplugged'"
   },

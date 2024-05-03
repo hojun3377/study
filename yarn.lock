@@ -126,12 +126,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"client-study@workspace:packages/client-study":
-  version: 0.0.0-use.local
-  resolution: "client-study@workspace:packages/client-study"
-  languageName: unknown
-  linkType: soft
-
 "commander@npm:^5.0.0":
   version: 5.1.0
   resolution: "commander@npm:5.1.0"
@@ -852,6 +846,12 @@ __metadata:
   dependencies:
     express: "npm:^4.19.2"
     tree-node-cli: "npm:^1.6.0"
+  languageName: unknown
+  linkType: soft
+
+"todo-client@workspace:packages/todo-client":
+  version: 0.0.0-use.local
+  resolution: "todo-client@workspace:packages/todo-client"
   languageName: unknown
   linkType: soft
 

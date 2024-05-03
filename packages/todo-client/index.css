@@ -1,0 +1,76 @@
+body {
+  background: #09dcdf;
+  width: 512px;
+  margin: 6rem auto 0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+h1 {
+  background: #22b8cf;
+  color: white;
+  height: 4rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#content {
+  background: white;
+}
+
+.todo-insert {
+  display: flex;
+  background: #495057;
+}
+
+.todo-insert input {
+  background: none;
+  outline: none;
+  border: none;
+  padding: 0.5rem;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: white;
+  flex: 1;
+}
+
+.todo-insert input::placeholder {
+  color: #dee2e6;
+}
+
+.todo-insert button {
+  background: #868e96;
+  outline: none;
+  border: none;
+  color: white;
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.1s background ease-in;
+}
+
+.todo-insert button:hover {
+  background: #adb5bd;
+}
+
+.todo-list {
+  width: 512px;
+  height: 342px;
+  min-height: 227px;
+  max-height: 342px;
+  overflow-y: auto;
+}
+
+.todo-list-item {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.todo-list-item:nth-child(even) {
+  background: #b8b9ba;
+}
