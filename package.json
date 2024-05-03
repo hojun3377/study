@@ -13,5 +13,5 @@
     "client": "yarn workspace client-study",
     "server": "yarn workspace server-study"
   },
-  "packageManager": "yarn@4.1.1"
+  "packageManager": "yarn@4.2.1"
 }
