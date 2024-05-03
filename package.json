@@ -6,12 +6,17 @@
     "type": "git"
   },
   "private": true,
+  "type": "module",
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
     "client": "yarn workspace client-study",
-    "server": "yarn workspace server-study"
+    "server": "yarn workspace server-study",
+    "tree": "tree -a --dirs-first -L 2 -I '.git|README.md|unplugged'"
   },
-  "packageManager": "yarn@4.2.1"
+  "packageManager": "yarn@4.2.1",
+  "devDependencies": {
+    "tree-node-cli": "^1.6.0"
+  }
 }
