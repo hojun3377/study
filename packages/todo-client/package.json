@@ -1,5 +1,5 @@
 {
-  "name": "client-study",
+  "name": "todo-client",
   "private": true,
   "packageManager": "yarn@4.1.1"
 }

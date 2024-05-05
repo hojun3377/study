@@ -9,19 +9,26 @@
 
 ### script
 
-- **yarn server start [no]**
+- **yarn server**
 
-  server-study 패키지의 index.js를 실행하며,  
-  기본 실행은 no-express 입니다.
-
-- **yarn server start express**
-
-  server-study 패키지의 index.js를 실행하며,  
-  express 폴더의 server를 실행합니다.
+  yarn warkspace server 입니다.
 
 - **yarn client**
 
   yarn warkspace client 입니다.
+
+- **yarn test [no|express]**
+
+  test 폴더에 구현된 server를 구동합니다.  
+  default는 no 입니다.
+
+  - **no**
+
+    http로 구현된 서버 구동
+
+  - **express**
+
+    express로 구현된 서버 구동
 
 - **yarn tree**
 
