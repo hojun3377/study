@@ -15,20 +15,20 @@ const RAW_RUNTIME_STATE =
       "reference": "workspace:."\
     },\
     {\
-      "name": "server-study",\
-      "reference": "workspace:packages/server-study"\
-    },\
-    {\
       "name": "todo-client",\
       "reference": "workspace:packages/todo-client"\
+    },\
+    {\
+      "name": "todo-server",\
+      "reference": "workspace:packages/todo-server"\
     }\
   ],\
   "enableTopLevelFallback": true,\
   "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
   "fallbackExclusionList": [\
-    ["server-study", ["workspace:packages/server-study"]],\
     ["study", ["workspace:."]],\
-    ["todo-client", ["workspace:packages/todo-client"]]\
+    ["todo-client", ["workspace:packages/todo-client"]],\
+    ["todo-server", ["workspace:packages/todo-server"]]\
   ],\
   "fallbackPool": [\
   ],\
@@ -77,6 +77,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/big-integer-npm-1.6.52-4bec75720c-9604224b4c.zip/node_modules/big-integer/",\
         "packageDependencies": [\
           ["big-integer", "npm:1.6.52"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["bignumber.js", [\
+      ["npm:9.0.0", {\
+        "packageLocation": "./.yarn/cache/bignumber.js-npm-9.0.0-ce190bcd7c-a760979ca8.zip/node_modules/bignumber.js/",\
+        "packageDependencies": [\
+          ["bignumber.js", "npm:9.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -738,6 +747,19 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["mysql", [\
+      ["npm:2.18.1", {\
+        "packageLocation": "./.yarn/cache/mysql-npm-2.18.1-8fdb56201f-146aee0fde.zip/node_modules/mysql/",\
+        "packageDependencies": [\
+          ["mysql", "npm:2.18.1"],\
+          ["bignumber.js", "npm:9.0.0"],\
+          ["readable-stream", "npm:2.3.7"],\
+          ["safe-buffer", "npm:5.1.2"],\
+          ["sqlstring", "npm:2.3.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["negotiator", [\
       ["npm:0.6.3", {\
         "packageLocation": "./.yarn/cache/negotiator-npm-0.6.3-9d50e36171-3ec9fd413e.zip/node_modules/negotiator/",\
@@ -865,6 +887,20 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["readable-stream", [\
+      ["npm:2.3.7", {\
+        "packageLocation": "./.yarn/cache/readable-stream-npm-2.3.7-77b22a9818-1708755e6c.zip/node_modules/readable-stream/",\
+        "packageDependencies": [\
+          ["readable-stream", "npm:2.3.7"],\
+          ["core-util-is", "npm:1.0.3"],\
+          ["inherits", "npm:2.0.4"],\
+          ["isarray", "npm:1.0.0"],\
+          ["process-nextick-args", "npm:2.0.1"],\
+          ["safe-buffer", "npm:5.1.2"],\
+          ["string_decoder", "npm:1.1.1"],\
+          ["util-deprecate", "npm:1.0.2"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:2.3.8", {\
         "packageLocation": "./.yarn/cache/readable-stream-npm-2.3.8-67a94c2cb1-7efdb01f38.zip/node_modules/readable-stream/",\
         "packageDependencies": [\
@@ -950,16 +986,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["server-study", [\
-      ["workspace:packages/server-study", {\
-        "packageLocation": "./packages/server-study/",\
-        "packageDependencies": [\
-          ["server-study", "workspace:packages/server-study"],\
-          ["express", "npm:4.19.2"]\
-        ],\
-        "linkType": "SOFT"\
-      }]\
-    ]],\
     ["set-function-length", [\
       ["npm:1.2.2", {\
         "packageLocation": "./.yarn/cache/set-function-length-npm-1.2.2-243073748b-82850e62f4.zip/node_modules/set-function-length/",\
@@ -1006,6 +1032,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["sqlstring", [\
+      ["npm:2.3.1", {\
+        "packageLocation": "./.yarn/cache/sqlstring-npm-2.3.1-2d4ffafe98-8c188effb4.zip/node_modules/sqlstring/",\
+        "packageDependencies": [\
+          ["sqlstring", "npm:2.3.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["statuses", [\
       ["npm:2.0.1", {\
         "packageLocation": "./.yarn/cache/statuses-npm-2.0.1-81d2b97fee-34378b207a.zip/node_modules/statuses/",\
@@ -1041,6 +1076,17 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./packages/todo-client/",\
         "packageDependencies": [\
           ["todo-client", "workspace:packages/todo-client"]\
+        ],\
+        "linkType": "SOFT"\
+      }]\
+    ]],\
+    ["todo-server", [\
+      ["workspace:packages/todo-server", {\
+        "packageLocation": "./packages/todo-server/",\
+        "packageDependencies": [\
+          ["todo-server", "workspace:packages/todo-server"],\
+          ["express", "npm:4.19.2"],\
+          ["mysql", "npm:2.18.1"]\
         ],\
         "linkType": "SOFT"\
       }]\
